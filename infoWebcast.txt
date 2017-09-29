@@ -1,0 +1,10 @@
+
+//INFO POUR FAIRE L'AGENT:
+Pour utiliser API github:
+
+1) il faut s'authentifier pour pouvoir envoyer un max de requête
+https://developer.github.com/v3/#authentication => utilisation des token personnels, dans les settings. permet de s'authentifier. ATTENTION PAS EN DONNER ACCES A N'IMPORTE QUI!
+
+2) on peut utiliser un npm qui gère l'utilisation du api ou alors faire les appels directement (ce qu'on va faire)
+	on utilise une librairie npm nommée superagent.
+3) externaliser la configuration du proframme (nconf) pour la sécurité (github-credentials.json dans notre projet)
