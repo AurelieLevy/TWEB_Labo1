@@ -12,6 +12,11 @@
   <!-- Link tags begin -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!--Load the AJAX API-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="js/chartPie.js"></script>
+
+
 </head>
 
 <body>
@@ -46,19 +51,18 @@
   <header>
     <div class="header">
       <h1> Welcome </h1>
-      <!-- ends header below -->
-    </div>
+      <!-- ends header below -->    </div>
+    
   </header>
   <!-- end header -->
   <!-- begin services section -->
   <section>
     <div class="container">
       <div class="services">
-        <h2> Getting started </h2>
-        <div class="button home-contact">
-            <a href="@"> Start </a>
-              </div>
-    </div>
+        <h2> Branchs' visual </h2>
+        <p>Here's the visual of the branchs' repository</p>
+        <div id="chart_div"></div>        
+      </div>
   </section>
   <footer>
     <div class="container">
