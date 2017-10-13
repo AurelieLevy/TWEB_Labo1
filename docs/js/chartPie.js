@@ -6,7 +6,6 @@ google.charts.load('current', { packages: ['treemap'] });
 function drawChart() {
   $.getJSON('repo.json', (dataJson) => {
     const data = google.visualization.arrayToDataTable(dataJson.data);
-
     function showFullTooltip(row, size, value) {
       return `${'<div style="background:#fd9; padding:10px; border-style:solid">' +
                   '<span style="font-family:Courier"><b>'}${data.getValue(row, 0)
@@ -19,9 +18,9 @@ function drawChart() {
     }
 
     const options = {
-      minColor: '#e7711c',
-      // midColor: '#fff',
-      maxColor: '#4374e0',
+      minColor: '#B0B0B0',
+      midColor: '#82cb78',
+      maxColor: '#54E740',
       showScale: true,
       generateTooltip: showFullTooltip,
     };
