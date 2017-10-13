@@ -1,0 +1,32 @@
+{
+  "name": "tweb_labo1",
+  "version": "1.0.0",
+  "description": "Welcome to our github analythics' project",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remij1/TWEB_Labo1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remij1/TWEB_Labo1/issues"
+  },
+  "homepage": "https://github.com/remij1/TWEB_Labo1#readme",
+  "dependencies": {
+    "eslint": "^4.8.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "mocha": "^4.0.1"
+  }
+}
