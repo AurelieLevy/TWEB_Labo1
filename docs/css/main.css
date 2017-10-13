@@ -610,7 +610,7 @@ input[type="button"]:focus {
 }
 
 .header {
-  background-image: url(../img/header-img-min.png);
+  background-image: url(../img/Banner-1.png);
   background-size: cover;
   background-position: center center;
   background-attachment: scroll;
@@ -630,7 +630,7 @@ input[type="button"]:focus {
           transform: translate(-50%, -50%);
   text-align: center;
   line-height: 2em;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 1.4rem;
   font-weight: 300;
 }
@@ -944,13 +944,14 @@ h4 {
 
 footer {
   background-color: #cbcbcb;
-  min-height: 8em;
+  /*min-height: 8em;*/
   width: 100%;
 }
 
 .copyright ul {
   float: none;
   display: block;
+  
 }
 
 .copyright li {
