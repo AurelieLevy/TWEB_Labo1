@@ -1,0 +1,7 @@
+{
+    "extends": "airbnb-base"
+		"env": {
+        "google": true,
+        "mocha": true, //la virgule est nécessaire si en .js
+    }
+}

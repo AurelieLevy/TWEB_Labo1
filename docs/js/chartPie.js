@@ -40,47 +40,43 @@ function drawChart() {
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'Topping');
     data.addColumn('number', 'Slices');
-    var dataJson = $.getJSON("repo.json", function(json){
-        return json;
+    $.getJSON("repo.json", function (dataJson) {
+        console.log(dataJson);
+        var result = [];
+        for (var i in dataJson) {
+            result.push([i, dataJson[i]]);
+        }
+        data.addRows(result);
+
+        /*data.addRows([
+            ['James', 31],
+            ['Onions', 1],
+            ['Olives', 1],
+            ['Zucchini', 1],
+            ['Pepperoni', 2]
+        ]);*/
+
+        // Set chart options
+        var options = {
+            'title': 'Number of commit by author',
+            'width': 800,
+            'height': 700
+        };
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+
+
+        //console.log(json);
+        //return json;
     });//ouverture et lecture fichier json
 
 
 
 
-    
-//TODO: VOIR DANS INDEX.HTML POUR INSERER JQUERY!!!! REGARDER DANS LA CONSOLE DE FIREFOX LES ERREURS A REGLER!!!
+
+    //TODO: VOIR DANS INDEX.HTML POUR INSERER JQUERY!!!! REGARDER DANS LA CONSOLE DE FIREFOX LES ERREURS A REGLER!!!
 
 
-
-
-
-
-
-
-
-    console.log(dataJson);
-    var result = [];
-    for(var i in dataJson){
-        result.push([i, dataJson[i]]);
-    }
-    data.addRows(result);
-
-    /*data.addRows([
-        ['James', 31],
-        ['Onions', 1],
-        ['Olives', 1],
-        ['Zucchini', 1],
-        ['Pepperoni', 2]
-    ]);*/
-
-    // Set chart options
-    var options = {
-        'title': 'Number of commit by author',
-        'width': 800,
-        'height': 700
-    };
-
-    // Instantiate and draw our chart, passing in some options.
-    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-    chart.draw(data, options);
 }
