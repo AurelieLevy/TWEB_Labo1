@@ -1,68 +1,43 @@
-/* global google */
+/* global google $ */
 
 google.charts.load('current', { packages: ['treemap'] });
+
+
 function drawChart() {
-  const data = google.visualization.arrayToDataTable([
-    ['Location', 'Parent', 'Market trade volume (size)', 'Market increase/decrease (color)', 'test new col (new)'],
-    ['Global', null, 0, 0, 100],
-    ['America', 'Global', 0, 0, 100],
-    ['Europe', 'Global', 0, 0, 100],
-    ['Asia', 'Global', 0, 0, 100],
-    ['Australia', 'Global', 0, 0, 100],
-    ['Africa', 'Global', 0, 0, 100],
-    ['Brazil', 'America', 11, 10, 100],
-    ['USA', 'America', 52, 31, 100],
-    ['Mexico', 'America', 24, 12, 100],
-    ['Canada', 'America', 16, -23, 100],
-    ['France', 'Europe', 42, -11, 100],
-    ['Germany', 'Europe', 31, -2, 100],
-    ['Sweden', 'Europe', 22, -13, 100],
-    ['Italy', 'Europe', 17, 4, 100],
-    ['UK', 'Europe', 21, -5, 100],
-    ['China', 'Asia', 36, 4, 100],
-    ['Japan', 'Asia', 20, -12, 100],
-    ['India', 'Asia', 40, 63, 100],
-    ['Laos', 'Asia', 4, 34, 100],
-    ['Mongolia', 'Asia', 15, -5, 100],
-    ['Israel', 'Asia', 12, 24, 100],
-    ['Iran', 'Asia', 18, 13, 100],
-    ['Pakistan', 'Asia', 11, -52, 100],
-    ['Egypt', 'Africa', 21, 0, 100],
-    ['S. Africa', 'Africa', 30, 43, 100],
-    ['Sudan', 'Africa', 12, 2, 100],
-    ['Congo', 'Africa', 10, 12, 100],
-    ['Zaire', 'Africa', 8, 10, 100],
-  ]);
+  $.getJSON('repo.json', (dataJson) => {
+    const data = google.visualization.arrayToDataTable(dataJson.data);
 
-  const tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
+    function showFullTooltip(row, size, value) {
+      return `${'<div style="background:#fd9; padding:10px; border-style:solid">' +
+                  '<span style="font-family:Courier"><b>'}${data.getValue(row, 0)
+      }</b>, ${data.getValue(row, 1)}, ${data.getValue(row, 2)
+      }, ${data.getValue(row, 3)}</span><br>` +
+                  `Datatable row: ${row}<br>${
+                    data.getColumnLabel(2)
+                  } (total value of this cell and its children): ${size}<br>${
+                    data.getColumnLabel(3)}: ${value} </div>`; // + '<br>' + data.getColumnLabel(4) + data.getValue(row, 4)
+    }
 
+    const options = {
+      minColor: '#e7711c',
+      // midColor: '#fff',
+      maxColor: '#4374e0',
+      showScale: true,
+      generateTooltip: showFullTooltip,
+    };
+
+    const tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
+
+    tree.draw(data, options);
+  });
   /* tree.draw(data, {
-    minColor: '#f00',
-    midColor: '#ddd',
-    maxColor: '#0d0',
-    headerHeight: 15,
-    fontColor: 'black',
-    showScale: true
-  }); */
-  function showFullTooltip(row, size, value) {
-    return `${'<div style="background:#fd9; padding:10px; border-style:solid">' +
-      '<span style="font-family:Courier"><b>'}${data.getValue(row, 0)
-    }</b>, ${data.getValue(row, 1)}, ${data.getValue(row, 2)
-    }, ${data.getValue(row, 3)}</span><br>` +
-      `Datatable row: ${row}<br>${
-        data.getColumnLabel(2)
-      } (total value of this cell and its children): ${size}<br>${
-        data.getColumnLabel(3)}: ${value} </div>`; // + '<br>' + data.getColumnLabel(4) + data.getValue(row, 4)
-  }
-  const options = {
-    minColor: '#e7711c',
-    midColor: '#fff',
-    maxColor: '#4374e0',
-    showScale: true,
-    generateTooltip: showFullTooltip,
-  };
-
-  tree.draw(data, options);
+      minColor: '#f00',
+      midColor: '#ddd',
+      maxColor: '#0d0',
+      headerHeight: 15,
+      fontColor: 'black',
+      showScale: true
+    }); */
 }
 google.charts.setOnLoadCallback(drawChart);
 
@@ -141,7 +116,7 @@ function drawChart() {
     });//ouverture et lecture fichier json
 
 
-    //TODO: VOIR DANS INDEX.HTML POUR INSERER JQUERY!!!! 
+    //TODO: VOIR DANS INDEX.HTML POUR INSERER JQUERY!!!!
     //REGARDER DANS LA CONSOLE DE FIREFOX LES ERREURS A REGLER!!!
 
 
