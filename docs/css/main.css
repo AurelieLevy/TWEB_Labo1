@@ -614,7 +614,7 @@ input[type="button"]:focus {
   background-size: cover;
   background-position: center center;
   background-attachment: scroll;
-  min-height: 22rem;
+  min-height: 15rem;
   position: relative;
   margin-top: 1rem;
 }
@@ -943,7 +943,7 @@ h4 {
 }
 
 footer {
-  background-color: #cbcbcb;
+  background-color: #8bd5fa;
   /*min-height: 8em;*/
   width: 100%;
 }
