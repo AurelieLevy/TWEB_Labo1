@@ -70,11 +70,31 @@
     <div class="container">
       <div class="services">
         <h2> Commits' visual </h2>
-        <p>Here's a comparaison between the authors and theirs commits. Use the left click to explore the graph and the right
-          click to come back</p>
-        <!-- <div id="chart_div"></div>      -->
-        <div id="chart_div" style="width: 900px; height: 500px; margin-left: auto; margin-right: auto;"></div>
+        <p>
+          Here's a graphic with some informations about the authors of an Github's repository
+          and theirs commits. 
+          <br> You will find at first the name of the authors. The size of their box is the percentage of commits made by them. By clicking on it, the commits associated 
+          with the author you had choose will be displayed. If you leave your mouse on it, you will have
+          some informations about it.
+          <br> Use the left click to explore the graph and the right click
+          to come back.
+          <br> The colors have some significations, see the legend below:
+        </p>
+        <figure>
+          <figcaption style="align-content: center">
+            <p>
+              <fieldset style="border-color: #4BB200; color: #4BB200; background-color: #000000">
+                <legend style="color: #21AE00">Legend of the graph:</legend>
+                <span style="color: #B0B0B0; margin-left: 20%">Old </span>
+                <span style="color: #82cb78; margin-left: 20%">Moderately old </span>
+                <span style="color: #54E740; margin-left: 20%">Recent </span>
+              </fieldset>
+            </p>
+          </figcaption>
+          <div display:inline id="chart_div" style="width: 900px; height: 500px; margin-left: auto; margin-right: auto;"></div>
+        </figure>
       </div>
+    </div>
     </div>
   </section>
   <footer>
