@@ -11,7 +11,7 @@ The user can go through the graphic by using the left click to explore and the r
 ### Criteria done
 * The app is online and publicly available (e.g. on heroku)
 
-```https://remij1.github.io/TWEB_Labo1/```
+```[notre site] (https://remij1.github.io/TWEB_Labo1/)```
 
 * Someone arriving on the app, without prior knowledge of the project, understands what it is about and can use it.
 * The app uses a nice visual template.
