@@ -11,9 +11,10 @@ The user can go through the graphic by using the left click to explore and the r
 ### Criteria done
 * The app is online and publicly available (e.g. on heroku)
 
-```[notre site] (https://remij1.github.io/TWEB_Labo1/)```
+	[notre site] (https://remij1.github.io/TWEB_Labo1/)
 
 * Someone arriving on the app, without prior knowledge of the project, understands what it is about and can use it.
+	We have write some description and a legend to explain the utilities of our project.
 * The app uses a nice visual template.
 * There is a repo with a README.md file that explains what the project is about, how to run it locally and how to build it.
 * The build process invokes a linter. The linter is happy with the quality of your code (no error).
