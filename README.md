@@ -60,6 +60,7 @@ The user can go through the chart by using the left click to explore and the rig
 * There is something else that you have done and that you think deserves a bonus.
 
 	We have added some features: an icon, a redimensionnable windows, etc.
+	To avoid any problems using a personal token for the connexion, we create environment variables to replace it.
 	TODO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ## How to run locally
