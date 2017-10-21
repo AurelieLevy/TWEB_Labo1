@@ -9,7 +9,7 @@ The colors used are linked to the date of the creation: green is recent and gray
 The user can go through the chart by using the left click to explore and the right click to come back.
 
 ### Criteria done
-* The app is online and publicly available (e.g. on heroku)
+* [x] The app is online and publicly available (e.g. on heroku)
 
 	https://remij1.github.io/TWEB_Labo1/
 
