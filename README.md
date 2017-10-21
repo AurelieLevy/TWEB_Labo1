@@ -39,6 +39,10 @@ The user can go through the chart by using the left click to explore and the rig
 
 
 ### Extra criteria done
+* [ ] It is possible to test the app locally, with a docker-compose up.
+
+	TODO!!!!
+
 * [x] Extra effort has been put in the UI/UX.
 
 	Our chart is easy to use, and with the legend, easy to understand. The colors choosen are in line with the template and easy to see.
