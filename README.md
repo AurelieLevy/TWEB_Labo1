@@ -28,7 +28,7 @@ The user can go through the chart by using the left click to explore and the rig
 
 * [x] The build process invokes a linter. The linter is happy with the quality of your code (no error).
 
-	TODO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	We used gulp to build our project. It is used to check if all of our code is well format. To execute the build process, you could use 'node_modules/.bin/gulp to execute the default task, wich is to check the agent and the client chartPie.js scripts. If you use vscode as IDE, you could open it at the root of this project and launch directly the default gulp task.
 
 * [x] The app fetches data from GitHub and presents it in the UI.
 
@@ -70,4 +70,4 @@ The user can go through the chart by using the left click to explore and the rig
 
 ## How to build it
 
-
+We used gulp to build our project. It is used to check if all of our code is well format. To execute the build process, you could use 'node_modules/.bin/gulp to execute the default task, wich is to check the agent and the client chartPie.js scripts. If you use vscode as IDE, you could open it at the root of this project and launch directly the default gulp task.
