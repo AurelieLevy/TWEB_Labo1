@@ -1,6 +1,5 @@
-# Github Analytics
-Welcome to our first project on github analytics
 ![Github Analytics](/docs/img/headSite.PNG)
+Welcome to our first project on github analytics
 
 ## What the project is about
 This project show some informations about a particuliar repository.
