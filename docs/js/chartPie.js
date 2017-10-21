@@ -6,7 +6,7 @@ google.charts.load('current', { packages: ['treemap'] });
 function drawChart() {
   $.getJSON('repo.json', (dataJson) => {
     const data = google.visualization.arrayToDataTable(dataJson.data);
-    function showFullTooltip(row, size, value) {
+    function showFullTooltip(row) {
       return `${'<div style="background:#fd9; padding:10px; border-style:solid">' +
         '<span style="font-family:Courier"><b> NOM: '}${data.getValue(row, 0)}</b></span><br>` +
         `${data.getColumnLabel(4)}: ${data.getValue(row, 4)}<br>${

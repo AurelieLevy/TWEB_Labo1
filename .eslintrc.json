@@ -3,5 +3,16 @@
     "env": {
         "mocha": true,
         "browser": true
+    },
+    "rules": {
+        "no-console":"off",
+        // Utilisé afin de résoudre les problèmes d'import, dues au submodule TWEB_Labo1_node
+        "import/no-unresolved": [
+            "error",
+            {
+              "ignore": ["src/"]
+            }
+          ]
+      
     }
 }
