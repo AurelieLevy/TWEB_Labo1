@@ -94,7 +94,8 @@ Lastly, it could be useful to change the repo our project is watching. To do so,
 
 ## How to run locally
 
-
+To open the web site, just open the 'index.html' file under the 'docs' folder with your browser.
+To execute the agent once, you firstly have to set your credentials with one of the ways decribed above. Secondly, simple launch the command "npm start" under the 'TWEB_Labo1_node' subfolder.
 
 ## How to build it
 
