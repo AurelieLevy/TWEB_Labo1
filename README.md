@@ -101,4 +101,4 @@ To execute the agent once, you firstly have to set your credentials with one of 
 
 Firtsly, to install all of the dependencies this project needs, don't forget to do a 'npm install' at the root of the project. You will need to do so for the sub-project TWEB_Labo1_Node too.
 
-We used gulp to build our project. It is used to check if all of our code is well format. To execute the build process, you could use 'node_modules/.bin/gulp to execute the default task, wich is to check the agent and the client chartPie.js scripts. If you use vscode as IDE, you could open it at the root of this project and launch directly the default gulp task.
+We used gulp to build our project. It is used to check if all of our code is well format. To execute the build process, you could use 'node_modules/.bin/gulp (from the root of the project) to execute the default task, wich is to check the agent and the client chartPie.js scripts. If you use vscode as IDE, you could open it at the root of this project and launch directly the default gulp task.
