@@ -81,9 +81,9 @@ Lastly, it could be useful to change the repo our project is watching. To do so,
 
 	TODO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-* [ ] Extra effort has been put in the build pipeline.
+* [x] Extra effort has been put in the build pipeline.
 
-	TODO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	We discobered and used gulp to build our project, writing 2 tasks to lint our 2 project (/docs and /TWEB_Labo1_Node) and a default task using these 2 tasks.
 
 * [x] There is something else that you have done and that you think deserves a bonus.
 
