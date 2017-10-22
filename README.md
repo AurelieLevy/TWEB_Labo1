@@ -34,7 +34,7 @@ The github-credentials.json file is useful to work locally, but is not very secu
 
 Lastly, it could be useful to change the repo our project is watching. To do so, change the "owner" and the "repo" constants in TWEB_Labo1_Node/src/agent.js.
 
-### Criteria done
+### Mandatory criteria
 * [x] The app is online and publicly available (e.g. on heroku)
 
 	https://remij1.github.io/TWEB_Labo1/
@@ -49,11 +49,13 @@ Lastly, it could be useful to change the repo our project is watching. To do so,
 
 * [x] There is a repo with a README.md file that explains what the project is about, how to run it locally and how to build it.
 
-	You are reading it ;)
+	You are reading it  :simple_smile:
 
 * [x] The build process invokes a linter. The linter is happy with the quality of your code (no error).
 
 	We used gulp to build our project. It is used to check if all of our code is well format. To execute the build process, you could use 'node_modules/.bin/gulp to execute the default task, wich is to check the agent and the client chartPie.js scripts. If you use vscode as IDE, you could open it at the root of this project and launch directly the default gulp task.
+	Be careful with git: On windows, it can make a conversion (LF replaced by CRLF) that will give you an error with the linter. To avoid that, you can modify the git configuration: 
+	```git config core.autocrlf false```
 
 * [x] The app fetches data from GitHub and presents it in the UI.
 
@@ -64,10 +66,10 @@ Lastly, it could be useful to change the repo our project is watching. To do so,
 
 
 
-### Extra criteria done
+### Extra criteria
 * [ ] It is possible to test the app locally, with a docker-compose up.
 
-	TODO!!!!
+	TO DO
 
 * [x] Extra effort has been put in the UI/UX.
 
@@ -79,18 +81,18 @@ Lastly, it could be useful to change the repo our project is watching. To do so,
 
 * [ ] Extra effort has been put to make the app “sticky” and/or “viral”. There is something about it that makes it particularly original, fun. Or there is something that will make people come back to it.
 
-	TODO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	TO DO
 
 * [ ] Extra effort has been put in the build pipeline.
 
-	TODO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	TO DO
 
 * [x] There is something else that you have done and that you think deserves a bonus.
 
 	We have added some features: an icon, a redimensionnable windows, etc.
 	To avoid any problems using a personal token for the connexion, we create environment variables on heroku to replace it.
 
-	TODO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	TO DO
 
 ## How to run locally
 
