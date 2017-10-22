@@ -92,8 +92,6 @@ Lastly, it could be useful to change the repo our project is watching. To do so,
 	We have added some features: an icon, a redimensionnable windows, etc.
 	To avoid any problems using a personal token for the connexion, we create environment variables on heroku to replace it.
 
-	TO DO
-
 ## How to run locally
 
 To open the web site, just open the 'index.html' file under the 'docs' folder with your browser.
