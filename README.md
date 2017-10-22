@@ -49,7 +49,7 @@ Lastly, it could be useful to change the repo our project is watching. To do so,
 
 * [x] There is a repo with a README.md file that explains what the project is about, how to run it locally and how to build it.
 
-	You are reading it  :simple_smile:
+	You are reading it  :smile:
 
 * [x] The build process invokes a linter. The linter is happy with the quality of your code (no error).
 
